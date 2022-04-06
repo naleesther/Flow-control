@@ -38,16 +38,18 @@ fun givingDrinks(age:Int){
 fun getMultiple() {
 
     for (y in 1..100) {
-        if (y % 3 == 0) {
+        if (y % 3==0 && y % 5==0){
+            println("FizzBuzz")
+        }
+        else if (y % 3==0){
             println("Fizz")
         }
-          else if (y % 5 == 0) {
-                println("Buzz")
-            }
-         if (y % 3 == 0 && y % 5 == 0) {
-                println("FizzBuzz")
-            }
+        else if (y % 5==0){
+            println("Buzz")
+        }
+        else{
+            println(y)
+        }
     }
 }
-
 
